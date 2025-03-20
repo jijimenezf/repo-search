@@ -18,3 +18,12 @@ npm run dev
 ```
 
 It is important to notice that solution proposed is based on React Query but my solution is using shadcn components
+
+
+I added some screenshots of the result
+
+![alt text](https://res.cloudinary.com/dzhfwgpoy/image/upload/v1742487649/v1_jwixoy.png)
+
+![alt text](https://res.cloudinary.com/dzhfwgpoy/image/upload/v1742487649/v2_h1tavx.png)
+
+![alt text](https://res.cloudinary.com/dzhfwgpoy/image/upload/v1742487649/v3_guee75.png)
