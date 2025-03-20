@@ -125,14 +125,17 @@ export default function RepositoryList({
         <Pagination>
           <PaginationContent>
             <PaginationItem
-              className={currentPage === 1 ? "pointer-events-none" : ""}
+              className={currentPage === 1 ? "pointer-events-none text-gray-400" : "cursor-pointer"}
             >
               <PaginationPrevious
                 onClick={() => setCurrentPage(currentPage - 1)}
               />
             </PaginationItem>
             {Array.from({ length: totalPages }).map((_, index) => (
-              <PaginationItem key={`page-${index}`}>
+              <PaginationItem 
+                key={`page-${index}`}
+                className={currentPage === index + 1 ? "pointer-events-none text-gray-400" : "cursor-pointer"}
+              >
                 <PaginationLink
                   isActive={currentPage === index + 1}
                   onClick={() => setCurrentPage(index + 1)}
@@ -142,9 +145,7 @@ export default function RepositoryList({
               </PaginationItem>
             ))}
             <PaginationItem
-              className={
-                currentPage === totalPages ? "pointer-events-none" : ""
-              }
+              className={currentPage === totalPages ? "pointer-events-none text-gray-400" : "cursor-pointer"}
             >
               <PaginationNext onClick={() => setCurrentPage(currentPage + 1)} />
             </PaginationItem>
